@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio & Admin Panel - Evan Akbar",
+  "description": "Modern personal portfolio for Evan Akbar featuring a live SaaS admin dashboard, dark blue glassmorphic aesthetic, responsive design, and full REST CRUD API backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
