@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Shield } from 'lucide-react';
 import {
   ProfileData,
   ProjectItem,
@@ -287,6 +288,16 @@ export default function App() {
       <Footer profile={profile} onOpenAdmin={() => setViewMode('admin')} />
 
       <CVModal isOpen={isCVOpen} onClose={() => setIsCVOpen(false)} profile={profile} />
+
+      {/* Floating Quick Admin Access Button */}
+      <button
+        onClick={() => setViewMode('admin')}
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold shadow-xl shadow-sky-500/30 transition-all transform hover:scale-105 active:scale-95 group"
+        title="Buka Admin Panel untuk mengatur seluruh data"
+      >
+        <Shield className="w-5 h-5 text-slate-950 fill-slate-950/20" />
+        <span className="text-xs tracking-wide">Kelola Portofolio (Admin)</span>
+      </button>
 
       <ToastContainer toasts={toasts} onDismiss={handleDismissToast} />
     </div>
