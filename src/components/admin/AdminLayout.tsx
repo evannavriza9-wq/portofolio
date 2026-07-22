@@ -153,8 +153,9 @@ export const AdminLayout: React.FC<AdminLayoutProps> = ({
             <h1 className="text-base font-bold text-slate-100">
               {menuItems.find((m) => m.id === activeTab)?.label || 'Dashboard'}
             </h1>
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono hidden sm:inline-block">
-              REST API Connected
+            <span className="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono hidden sm:inline-flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              🔥 Firebase Connected
             </span>
           </div>
 

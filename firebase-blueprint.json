@@ -1,0 +1,100 @@
+{
+  "entities": {
+    "profile": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "titles": { "type": "array", "items": { "type": "string" } },
+        "bio": { "type": "string" },
+        "shortBio": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "cvUrl": { "type": "string" },
+        "cvFileName": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "university": { "type": "string" },
+        "major": { "type": "string" },
+        "statusText": { "type": "string" },
+        "socials": { "type": "object" }
+      }
+    },
+    "projects": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "shortDesc": { "type": "string" },
+        "description": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "images": { "type": "array", "items": { "type": "string" } },
+        "techStack": { "type": "array", "items": { "type": "string" } },
+        "githubUrl": { "type": "string" },
+        "demoUrl": { "type": "string" },
+        "status": { "type": "string" },
+        "order": { "type": "number" },
+        "featured": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "percentage": { "type": "number" },
+        "iconName": { "type": "string" },
+        "proficiency": { "type": "string" },
+        "order": { "type": "number" }
+      }
+    },
+    "experiences": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "role": { "type": "string" },
+        "organization": { "type": "string" },
+        "type": { "type": "string" },
+        "period": { "type": "string" },
+        "location": { "type": "string" },
+        "description": { "type": "string" },
+        "skillsUsed": { "type": "array", "items": { "type": "string" } },
+        "order": { "type": "number" }
+      }
+    },
+    "certificates": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "issuer": { "type": "string" },
+        "issueDate": { "type": "string" },
+        "credentialId": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "verifyUrl": { "type": "string" },
+        "order": { "type": "number" }
+      }
+    },
+    "messages": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "totalVisitors": { "type": "number" }
+      }
+    }
+  }
+}

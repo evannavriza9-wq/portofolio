@@ -74,33 +74,25 @@ export const About: React.FC<AboutProps> = ({ profile, projectsCount, skillsCoun
                 <span>My Journey</span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-slate-100 mb-4">
-                Full-Stack Engineer & Informatics Student
+                Siswa Rekayasa Perangkat Lunak (RPL) & Developer
               </h3>
-              <p className="text-slate-300 leading-relaxed text-sm sm:text-base mb-6">
+              <p className="text-slate-300 leading-relaxed text-sm sm:text-base mb-6 whitespace-pre-line">
                 {profile.bio}
               </p>
-              <div className="space-y-3">
-                {highlights.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-400">
               <div>
-                <span className="text-slate-500 font-mono block">Current University</span>
+                <span className="text-slate-500 font-mono block">Sekolah / Instansi</span>
                 <span className="font-semibold text-slate-200">{profile.university}</span>
               </div>
               <div>
-                <span className="text-slate-500 font-mono block">Major</span>
+                <span className="text-slate-500 font-mono block">Jurusan</span>
                 <span className="font-semibold text-slate-200">{profile.major}</span>
               </div>
               <div>
-                <span className="text-slate-500 font-mono block">Focus Areas</span>
-                <span className="font-semibold text-slate-200">React, Laravel & UI/UX</span>
+                <span className="text-slate-500 font-mono block">Fokus Keahlian</span>
+                <span className="font-semibold text-slate-200">Software, Web & UI/UX</span>
               </div>
             </div>
           </div>
